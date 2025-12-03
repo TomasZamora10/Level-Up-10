@@ -1,5 +1,8 @@
+// Archivo: src/Pages/PaginaCatalogo.tsx
+
 import React, { useState, useMemo, useEffect } from 'react';
-import ProductCard from '../Components/ProductoDesc'; 
+// CORRECCIÓN: 'ProductoDesc' -> 'ProductoDescuento' para que coincida con el nombre del archivo.
+import ProductCard from '../Components/ProductoDescuento'; 
 import { fetchAllProducts } from '../services/ProductoAPIService'; 
 import type { Producto } from '../Interfaces/Producto';
 
