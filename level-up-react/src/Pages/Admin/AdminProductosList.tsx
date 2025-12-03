@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Producto } from '../../Interfaces/Producto';
-import { getAllProducts, deleteProduct } from '../../Data/Productos'; 
+import { getAllProducts, deleteProduct } from '../../Data/Producto';
 import AlertMessage from '../../Components/AlertMessage';
 import type { AdminView } from '../../Components/AdminLayout';
 

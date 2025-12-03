@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import type { Producto } from '../../Interfaces/Producto';
-import { getAllProducts, deleteProduct } from '../../Data/Producto'; // <-- Corrección aplicada aquí
+import { createProduct, updateProduct, getProductByCode, getAllProducts } from '../../Data/Producto';
 import AlertMessage from 'alert-message-react';
 import type { AdminView } from '../../Components/AdminLayout';
 // ...

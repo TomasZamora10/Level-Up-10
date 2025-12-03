@@ -1,7 +1,7 @@
 // tomaszamora10/level-up-10/Level-Up-10-28b4afa50c8d6b8bb7c8347975e883f974711d97/level-up-react/src/Pages/Admin/Admin.tsx
 
 import React, { useState } from 'react';
-import AdminLayout, { type AdminView } from '../../Components/Admin'; // <-- Corrección aplicada aquí
+import AdminLayout, { type AdminView } from '../../Components/Admin';
 import PagAdminProductosList from './AdminProductosList'; 
 import PagAdminProductosCRUD from './AdminProductosCRUD'; 
 import PagAdminDashboard from './AdminDashboard'; 
