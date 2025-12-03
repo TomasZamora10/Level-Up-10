@@ -1,12 +1,12 @@
-// tomaszamora10/level-up-10/Level-Up-10-28b4afa50c8d6b8bb7c8347975e883f974711d97/level-up-react/src/Pages/Admin/AdminProductosList.tsx
+// Archivo: src/Pages/Admin/AdminProductosCRUD.tsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import type { Producto } from '../../Interfaces/Producto';
-import { createProduct, updateProduct, getProductByCode, getAllProducts } from '../../Data/Producto';
-import AlertMessage from 'alert-message-react';
-import type { AdminView } from '../../Components/AdminLayout';
-// ...
+import { createProduct, updateProduct, getProductByCode, getAllProducts } from '../../Data/Producto'; // CORREGIDO (Producto singular)
+import AlertMessage from '../../Components/AlertMessage'; // CORREGIDO (Ruta local)
+import type { AdminView } from '../../Components/AdminLayout'; // RUTA A AdminLayout/Admin.tsx
 
+// ... (resto del código sin cambios)
 
 interface PagAdminProductosCRUDProps {
     type: 'nuevo' | 'editar';

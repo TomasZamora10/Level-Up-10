@@ -1,8 +1,12 @@
+// Archivo: src/Pages/Admin/AdminProductosList.tsx
+
 import React, { useState } from 'react';
 import type { Producto } from '../../Interfaces/Producto';
-import { getAllProducts, deleteProduct } from '../../Data/Producto';
-import AlertMessage from '../../Components/AlertMessage';
-import type { AdminView } from '../../Components/AdminLayout';
+import { getAllProducts, deleteProduct } from '../../Data/Producto'; // CORREGIDO (Producto singular)
+import AlertMessage from '../../Components/AlertMessage'; // RUTA CORREGIDA al componente local
+import type { AdminView } from '../../Components/AdminLayout'; // RUTA A AdminLayout/Admin.tsx
+
+// ... (resto del código sin cambios)
 
 interface PagAdminProductosListProps {
     onNavigate: (view: AdminView, productCode?: string) => void;

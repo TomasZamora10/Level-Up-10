@@ -1,3 +1,4 @@
+// Archivo: src/Components/AlertMessage.tsx
 import React from 'react';
 
 export interface AlertMessageProps {
@@ -7,6 +8,7 @@ export interface AlertMessageProps {
 
 const AlertMessage: React.FC<AlertMessageProps> = ({ type, message }) => {
     
+    // Estilos basados en el tema oscuro (Neon Green, Accent Blue)
     const getAlertStyle = (alertType: string): React.CSSProperties => {
         let backgroundColor = '#1E90FF1A'; // Info (Accent Blue, 10% opacidad)
         let borderColor = '#1E90FF';

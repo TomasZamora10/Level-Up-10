@@ -2,7 +2,8 @@ import React from 'react';
 import type { Item } from '../Interfaces/ItemCarrito'; 
 import type { Usuario } from '../Interfaces/Usuario'; 
 import type { Direccion } from '../Interfaces/Direccion'; 
-import CheckoutForm from '../Components/CheckoutForm'; 
+// CORRECCIÓN: 'CheckoutForm' -> 'Checkout' para que coincida con el nombre del archivo.
+import CheckoutForm from '../Components/Checkout'; 
 
 interface PagCheckoutProps {
     items: Item[];
