@@ -1,8 +1,13 @@
+// tomaszamora10/level-up-10/Level-Up-10-28b4afa50c8d6b8bb7c8347975e883f974711d97/level-up-react/src/Pages/Admin/Admin.tsx
+
 import React, { useState } from 'react';
-import AdminLayout, { type AdminView } from '../../Components/Admin'; // ✅ RUTA CORREGIDA
+// CAMBIO: '../../Components/AdminLayout' -> '../../Components/Admin'
+import AdminLayout, { type AdminView } from '../../Components/Admin';
 import PagAdminProductosList from './AdminProductosList'; 
 import PagAdminProductosCRUD from './AdminProductosCRUD'; 
 import PagAdminDashboard from './AdminDashboard'; 
+
+// ... resto del código
 
 const PlaceholderView: React.FC<{ view: AdminView }> = ({ view }) => (
     <div className="p-4" style={{ color: '#D3D3D3', border: '1px solid yellow', borderRadius: '8px' }}>
