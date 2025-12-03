@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react';
+// tomaszamora10/level-up-10/Level-Up-10-28b4afa50c8d6b8bb7c8347975e883f974711d97/level-up-react/src/Pages/Admin/AdminProductosList.tsx
+
+import React, { useState } from 'react';
 import type { Producto } from '../../Interfaces/Producto';
-import { createProduct, updateProduct, getProductByCode, getAllProducts } from '../../Data/Productos';
-import AlertMessage from '../../Components/AlertMessage';
+import { getAllProducts, deleteProduct } from '../../Data/Producto'; // <-- Corrección aplicada aquí
+import AlertMessage from 'alert-message-react';
 import type { AdminView } from '../../Components/AdminLayout';
+// ...
+
 
 interface PagAdminProductosCRUDProps {
     type: 'nuevo' | 'editar';
