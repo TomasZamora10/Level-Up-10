@@ -1,0 +1,25 @@
+{
+  "name": "level-up-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cd level-up-react && npm run dev",
+    "build": "cd level-up-react && npm run build",
+    "preview": "cd level-up-react && npm run preview",
+    "lint": "cd level-up-react && npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomasZamora10/Level-Up-10.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TomasZamora10/Level-Up-10/issues"
+  },
+  "homepage": "https://github.com/TomasZamora10/Level-Up-10#readme"
+}
