@@ -9,13 +9,17 @@
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: all 0.3s ease;
+  filter: drop-shadow(0 0 15px rgba(30, 144, 255, 0.5));
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 25px var(--secondary));
+  transform: scale(1.1) rotate(5deg);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 25px #61dafb);
 }
 
 @keyframes logo-spin {
@@ -35,8 +39,70 @@
 
 .card {
   padding: 2em;
+  background: var(--card-bg);
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(30, 144, 255, 0.2), inset 0 0 20px rgba(57, 255, 20, 0.05);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--secondary);
+  box-shadow: 0 0 30px rgba(57, 255, 20, 0.4), inset 0 0 20px rgba(57, 255, 20, 0.1);
+  transform: translateY(-5px);
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+
+/* Navbar personalizado */
+.navbar {
+  background: linear-gradient(90deg, #0f0c29 0%, #1a0845 50%, #0f0c29 100%) !important;
+  border-bottom: 3px solid var(--secondary);
+  box-shadow: 0 4px 20px rgba(30, 144, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(30, 144, 255, 0.5);
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: var(--text-secondary) !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--secondary) !important;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Container personalizado */
+.container-fluid {
+  padding: 0.5rem 1rem;
 }
