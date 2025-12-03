@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import type { Usuario } from '../Interfaces/Usuario'; 
 import AlertMessage from '../Components/AlertMessage';
-import { validateRegistration } from '../Utils/validations';
+// CORRECCIÓN: 'validations' -> 'Validation'
+import { validateRegistration } from '../Utils/Validation';
 
 const primaryColor = '#000000';
 const accentBlue = '#1E90FF';
