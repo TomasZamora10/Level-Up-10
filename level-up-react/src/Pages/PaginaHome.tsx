@@ -1,6 +1,9 @@
+// Archivo: src/Pages/PaginaHome.tsx
+
 import React from 'react';
 import HomeBanner from '../Components/HomeBanner';
-import PagCatalogo from './PagCatalogo'; 
+// CORRECCIÓN: './PagCatalogo' -> './PaginaCatalogo'
+import PagCatalogo from './PaginaCatalogo'; 
 import type { Producto } from '../Interfaces/Producto';
 
 interface PagHomeProps {
